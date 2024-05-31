@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopta</title>
+    <link rel="stylesheet" type="text/css" href="/Q8.css">
+    <script src="Q8.js"></script>
+</head>
+<body>
+    <%- include ('partials/header') %>
+    <div class = "content">
+        <%- include ('partials/sidebar') %>
+        <br>
+        <h2 style = "text-align: center;"> P&nbsp;E&nbsp;T &nbsp;&nbsp;G&nbsp;I&nbsp;V&nbsp;E&nbsp;A&nbsp;W&nbsp;A&nbsp;Y </h2>
+        <p> > Complete the following form </p>
+        <fieldset> 
+            <legend>
+                PET REGISTER
+            </legend>
+            <form> 
+                <p>
+                <label>
+                    Which pet are you giving away?
+                    <input type = "radio" id = "cat" name = "pet" value = "Cat">
+                    Cat
+                </label>
+                <label> 
+                    <input type = "radio" id = "dog" name = "pet" value = "Dog">
+                    Dog
+                </label>
+                </p>
+                <p>
+                    <label> Breed of dog (if not dog, select none) </label>
+                    <select id = "selectDogBreed">
+                        <option value = "none"> -none- </option>
+                        <option value = "Labrador"> Labrador </option>
+                        <option value = "Bulldog"> Bulldog </option>
+                        <option value = "Husky"> Husky </option>
+                        <option value = "Pitbull"> Pitbull </option>
+                        <option value = "any"> Any </option>
+                    </select>
+                </p>
+                <p>
+                    <label> Breed of cat (if not cat select none) </label>
+                    <select id = "selectCatBreed">
+                        <option value = "none"> -none- </option>
+                        <option value = "Siamese"> Siamese </option>
+                        <option value = "Persian"> Persian </option>
+                        <option value = "Ragdoll"> Ragdoll </option>
+                        <option value = "Bengal"> Bengal </option>
+                        <option value = "any"> Any </option>
+                    </select>
+                </p>
+                <p>
+                    <label> Age: </label>
+                    <input type = "text" id = "age" name = "age" value = ""> 
+                </p>
+                <p>
+                    <label> Gender: </label>
+                    <label>
+                        <input type = "radio" id = "genderM" name = "gender" value = "male">
+                        Male
+                    </label>
+                    <label>
+                        <input type = "radio" id = "genderF" name = "gender" value = "female">
+                        Female
+                    </label>
+                    <label>
+                        <input type = "radio" id = "gender" name = "gender" value = "none">
+                        Doesn't Matter
+                    </label>
+                </p>
+                <p>
+                    <label> Gets Along With :</label>
+                    <label>
+                        <input type = "checkbox" id = "getAlongCat" name = "otherCats">
+                        Other Dogs
+                    </label>
+                    <label>
+                        <input type = "checkbox" id = "getAlongDog" name = "otherDogs">
+                        Other Cats
+                    </label>
+                    <label>
+                        <input type = "checkbox" id = "getAlongChild" name = "children">
+                        Small Children
+                    </label>
+                </p>
+                <p>
+                <label>
+                    Description of pet (optional):
+                </label>
+                </p>
+                <textarea id = "desc" name = "description" rows = "5" cols = "33">
+                </textarea>
+                <p> 
+                    <label> Current Owner Name:</label>
+                    <input type = "text" id = "ownerName" name = "ownerName">
+                </p>
+                <p>
+                    <label> Current Owner Email:</label>
+                    <input type = "email" id = "ownerEmail" name = "ownerEmail">
+                </p>
+                <p>
+                <label>
+                    <button onclick = "givePet()" value = "Submit">Submit  </button>
+                </label>
+                <label>
+                    <input type = "reset" value = "Clear">
+                </label>
+                </p>
+            </form>
+        </fieldset>
+    </div>
+    <%- include ('partials/footer') %>
+    
+</body>
+</html>

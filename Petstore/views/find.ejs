@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopta</title>
+    <link rel="stylesheet" type="text/css" href="Q8.css">
+    <script src="Q8.js"></script>
+</head>
+<body>
+    <%- include ('partials/header') %>
+    <%- include ('partials/sidebar') %>
+    <div class = "content">
+        <br>
+        <h2 style = "text-align: center;"> F&nbsp;I&nbsp;N&nbsp;D&nbsp;&nbsp; D&nbsp;O&nbsp;G&nbsp;/&nbsp;C&nbsp;A&nbsp;T </h2>
+        <p> > Complete the following form </p>
+        <fieldset> 
+            <legend> 
+                PET SEARCH
+            </legend>
+            <form action = "findingPets" method = "POST"> 
+                <p>
+                <label> 
+                    Which pet are you looking for?
+                    <input type = "radio" id = "cat" name = "pet" value = "Cat">
+                    Cat
+                </label>
+                <label> 
+                    <input type = "radio" id = "dog" name = "pet" value = "Dog">
+                    Dog
+                </label>
+                </p>
+                <p>
+                    <label> Breed of dog (if not dog, select none) </label>
+                    <select id ="selectDogBreed" name = "dogBreed">
+                        <option value = "none"> -none- </option>
+                        <option value = "Labrador"> Labrador </option>
+                        <option value = "Bulldog"> Bulldog </option>
+                        <option value = "Husky"> Husky </option>
+                        <option value = "Pitbull"> Pitbull </option>
+                        <option value = "any"> Any </option>
+                    </select>
+                </p>
+                <p>
+                    <label> Breed of cat (if not cat select none) </label>
+                    <select id ="selectCatBreed" name = "catBreed">
+                        <option value = "none"> -none- </option>
+                        <option value = "Siamese"> Siamese </option>
+                        <option value = "Persian"> Persian </option>
+                        <option value = "Ragdoll"> Ragdoll </option>
+                        <option value = "Bengal"> Bengal </option>
+                        <option value = "any"> Any </option>
+                    </select>
+                </p>
+                <p>
+                    <label> Prefered Age: </label>
+                    <input type = "text" id = "age" name = "age" value = "">
+                </p>
+                <p>
+
+                        Gender:
+                        <input type = "radio" id = "genderM" name = "gender" value ="male">
+                        Male
+                    
+                    
+                        <input type = "radio" id = "genderF" name = "gender" value ="female">
+                        Female
+                    
+                        <input type = "radio" id = "genderX" name = "gender" value = "none">
+                        Doesn't Matter 
+                </p>
+                <p>
+                    <label> Gets Along With :</label>
+                    <label>
+                        <input type = "checkbox" id = "otherCats" name = "getAlong1" value = "otherDogs">
+                        Other Dogs
+                    </label>
+                    <label>
+                        <input type = "checkbox" id = "otherDogs" name = "getAlong2" value = "otherCats">
+                        Other Cats
+                    </label>
+                    <label>
+                        <input type = "checkbox" id = "children" name = "getAlong3" value = "children">
+                        Small Children
+                    </label>
+                </p>
+                <p id = "message">
+                    <button onclick = "findPet()"> Submit </button>
+                    <button type = "reset"> Clear </button>
+                </p>
+            </form>
+        </fieldset>
+    </div>
+    <%- include ('partials/footer') %>
+    
+</body>
+</html>

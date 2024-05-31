@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopta</title>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <div class = "content">
+        <%- include('partials/sidebar') %>
+        <h2> C R E A T E</h2>
+        <form action="/accountCreate" method="POST">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" value ="">
+            <p>A username can contain letters (both upper and lower
+                case) and digits only. </p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" value ="">
+            <p>
+                A password must be at least 4 characters long
+                (characters are to be letters and digits only), have at least one letter
+                and at least one digit.
+            </p>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <%- include('partials/footer') %>
+</body>
+</html>

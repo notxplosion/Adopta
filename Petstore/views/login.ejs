@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopta</title>
+    <link rel="stylesheet" type="text/css" href="/Q8.css">
+    <script src="Q8.js"></script>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <div class = "content">
+        <%- include('partials/sidebar') %>
+        <form action = "/login" method = "POST">
+            <h2> L O G I N</h2>
+            <p>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </p>
+            <button type="submit">Login</button>
+        </form>
+
+        <p> Don't have an account? <a href="/account">Create one</a> </p>
+    </div>
+    <%- include('partials/footer') %>
+</body>
+</html>

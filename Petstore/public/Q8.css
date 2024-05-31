@@ -1,0 +1,233 @@
+.header {
+    height: auto;
+    margin-left: 200px;
+    margin-top: -70px;
+    margin-bottom: -60px;
+    background-color: #97d5ff;
+    padding: 30px;
+    text-align: center;
+    h1 {
+        font-size: 50px;
+        color: #000000;
+        font-family: system-ui;
+        text-align: center;
+    }
+    img {
+        float: left;
+        max-height: 75px;
+        position: absolute;
+        left: 210px;
+        top: -4px;
+    }
+    span {
+        float: right;
+        text-align: right;
+        font-size: 15px;
+        color: #000000;
+        font-family: system-ui;
+        margin-top: -77px;
+        font-weight: bold;
+    }
+}
+
+.sidemenu {
+    margin-top: auto;
+    width: 210px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    li {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-left: -30px;
+        list-style-type: none;
+        padding: 10px 8px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #ffffff;
+        display: block;
+        margin-top: 15px;
+    }
+    li:hover {
+        a {
+            margin:auto;
+            color: #000000;
+        }
+        background-color: #dddddd;
+    }
+    .active {
+        background-color:rgb(0, 102, 255);
+        color: white;
+        width: auto;
+        height: auto;
+    }
+    a {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+    max-height: max-content;
+    background-color: #d3edff;
+    p {
+        font-size: 15px;
+        color: #000000;
+        font-family:system-ui;
+    }
+    h2 {
+        font-size: 25px;
+        color: #000000;
+        font-family:system-ui;
+    }
+    h3 {
+        font-size: 15px;
+        color: #000000;
+        font-family:system-ui;
+    }
+    legend {
+        font-size: 20px;
+        color: #000000;
+        font-family:system-ui;
+    }
+    textarea {
+        padding: 10px;
+        max-width: 100%;
+        line-height: 1.5;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-shadow: 1px 1px 1px #999;
+    }
+    fieldset {
+        padding: 20px;
+        border:  double 4px rgb(61, 61, 155); 
+        width: 1000px; 
+        text-align: justify;
+        margin: auto;
+    }
+}
+
+#availableField {
+    padding: 20px;
+    border:  double 4px rgb(61, 61, 155); 
+    width: auto; 
+    text-align: justify;
+    margin: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.availableImg {
+    width: 30%;
+    height: 30%;
+    border: 6px double #39afc7;
+    margin: auto;
+    min-width: 560px;
+    min-height: 315px;
+}
+#availableTitle {
+    font-size: 25px;
+    color: #000000;
+    font-size:system-ui;
+    margin-left: auto;
+    text-align: center;
+}
+
+.contentPets {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: auto;
+    max-height: max-content;
+    background-color: #d3edff;
+    p {
+        font-size: 15px;
+        color: #000000;
+        font-family:system-ui;
+    }
+    legend {
+        font-size: 20px;
+        color: #000000;
+        font-family:system-ui;
+        margin-left: 100px;
+    }
+    a {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        text-decoration: none;
+    }
+    h2 {
+        font-size: 25px;
+        color: #000000;
+        font-family:system-ui;
+        margin-left: auto;
+    }
+    h3 {
+        font-size: 15px;
+        color: #000000;
+        font-family:system-ui;
+        margin-left: 140px;
+    }
+    li {
+        font-size: 15px;
+        color: #000000;
+        font-family:system-ui;
+        width: 40%
+        ;
+    }
+    button {
+        background-color: #7c8db9;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display:block;
+        font-size: 16px;
+        margin: 15px 205px;
+        cursor: pointer;
+        position: relative;
+        float:initial;
+    }
+}
+
+
+
+
+.footer {
+    position: bottom;
+    left: 0;
+    bottom: 0;
+    margin-left: 200px;
+    height: fit-content;
+    background-color: #97d5ff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    nobr {
+        font-size: 20px;
+        color: #000000;
+        font-family:system-ui;
+    }
+    a {
+        font-size: 20px;
+        color: #000000;
+        font-family:system-ui;
+    }
+    p {
+        font-size: 20px;
+        color: #000000;
+        font-family:system-ui;
+    }
+}
+
+
